@@ -499,23 +499,28 @@
               </div>
             </div>
             <div class="right-contact">
-                <form action="https://formsubmit.co/sharmakuhu8042@gmial.com" method="POST" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                   <div class="input-control i-c-2">
-                    <input type="text" required placeholder="YOUR NAME">
-                    <input type="email" required placeholder="YOUR EMAIL">
+                    <!-- <h2>Get In Touch!</h2>
+                    <br>
+                    <hr> -->
+                    <input type="hidden" name="access_key" value="6b8beeaa-af16-45eb-9872-87a3bae81c01">
+                    <input type="hidden" name="_next" value="">
+                    <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
+                    <input type="email" name="email" id="email" placeholder="YOUR EMAIL" required>
                   </div>
                   <div class="input-control">
-                    <input type="text" required placeholder="ENTER SUBJECT">
+                    <input type="text" name="text" id="text" placeholder="ENTER SUBJECT" required>
                   </div>
                   <div class="input-control">
-                    <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                    <textarea id="message" name="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                   </div>
                   <div class="submit-btn">
-                    <a href="#" class="main-btn">
-                      <span class="btn-text">Download CV</span>
-                      <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
-                  </div>
+                    <button type="submit" class="main-btn">
+                        <span class="btn-text">Submit</span>
+                        <!-- <span class="btn-icon"><i class="fas fa-download"></i></span> -->
+                    </button>
+                </div>
                 </form>
             </div>
         </div>
